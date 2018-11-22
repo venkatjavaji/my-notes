@@ -3,8 +3,10 @@
 	$ mkdr myrepo
 2. open git bash and 
 	$ git init
+	
 3. add the folder to the git
 	$ git add folder-to-add/*
+	
 4.commit the changes
 	$ git commit -m "initial commit"
 5. you have to create a repo from the browser by this time
