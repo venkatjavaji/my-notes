@@ -1,0 +1,15 @@
+
+#Ref :  https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
+Create and modify the new WSL configuration file:
+sudo nano /etc/wsl.conf
+
+# Now make it look like this and save the file when you're done:
+[automount]
+root = /
+options = "metadata"
+
+How to ssh into docker-machine***
+https://stackoverflow.com/questions/30330442/how-to-ssh-into-docker-machine-virtualbox-instance
+
+Ex : ssh docker@192.168.99.100
+password : tcuser

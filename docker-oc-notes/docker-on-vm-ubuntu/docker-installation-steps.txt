@@ -1,0 +1,34 @@
+Date : 28-Oct-2018************************
+#1.
+Install oracle-vm virtual box
+- During installation follow the default-options
+- for mounting : settings > shared folder > automount - yes > Access -full
+- host button - right ctrl >> host + c will toggle the menu options
+- very beautiful session on - networking on the virtual machine - https://www.youtube.com/watch?v=cDF4X7RmV4Q
+- dont try to access the docker daemon in the vm box, instead ssh in to the vm-ubuntu
+- how to ssh in to vm ubuntu
+	- get the ip of the vm machine > ifconfig -a
+	a. ssh $user@ipaddress
+	b. NAT the port number from Host machine to Guest Machine
+	c. ssh $user@localhost(this will ssh into the remote vm)
+- https://websiteforstudents.com/installing-virtualbox-guest-additions-on-ubuntu-18-04-beta/
+- https://www.omgubuntu.co.uk/2018/01/virtualbox-guest-additions-linux-kernel 
+#2.
+- Install docker from documentation : https://docs.docker.com/install/linux/docker-ce/ubuntu/#os-requirements
+- https://docs.docker.com/install/linux/linux-postinstall/#ip-forwarding-problems
+
+#3.
+- copy the spring boot project to the shared folder
+- build the docker image : docker build -t <name-of the image> .
+- run the docker image : docker run -itd --name <name-of the container> -p 8080:8080 <name-of the image>
+
+#4.
+- access the container from the host machine using #IP address of the guest machine : portnumber
+
+#5.
+- play with docker
+
+#6.
+- During the installation, the ip address of the vm-ubuntu is : 192.168.100.12
+- network options set is : Bridged Adapter
+

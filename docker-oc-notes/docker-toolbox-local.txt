@@ -1,0 +1,63 @@
+192.168.100.12
+0e528cfe5fe2
+192.168.100.12
+
+*******Docker Tool Box : 28-Oct-2018
+docker is configured to use the default machine with IP 192.168.99.100
+For help getting started, check out the docs at https://docs.docker.com
+
+
+Start interactive shell***
+
+#1.
+Install the docker tool box as mentioned @ https://docs.docker.com/toolbox/toolbox_install_windows/
+
+#2.
+If you want to access the docker from Windows Sub Sytem Linux(WSL), please execute the following commands:
+	a. $docker-machine env
+		export DOCKER_TLS_VERIFY="1"
+		export DOCKER_HOST="tcp://192.168.99.100:2376"
+		export DOCKER_CERT_PATH="/c/Users/venkat javaji/.docker/machine/machines/default"
+		export DOCKER_MACHINE_NAME="default"
+		export COMPOSE_CONVERT_WINDOWS_PATHS="true"
+		(OR)
+		eval $("/c/Program Files/Docker Toolbox/docker-machine.exe" env)
+	b. copy the above output to WSL command prompt (OR) add to your .bashrc
+		echo "export DOCKER_HOST=tcp://0.0.0.0:2375" >> ~/.bashrc && source ~/.bashrc
+		
+		*******You will need to source your .bashrc or logout/login (or restart the terminal) for the changes to take effect. To source your .bashrc, simply type
+
+		$ source ~/.bashrc
+	
+#3.
+Please start using docker from WSL command prompt
+
+
+****Installing the docker on Ubuntu/Linux:
+1. sudo apt-get remove docker docker-engine docker.io
+2. sudo apt-get update
+3. sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+4. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+5. sudo apt-key fingerprint 0EBFCD88
+6. sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+7. sudo apt-get update
+8. sudo apt-get install docker-ce
+9. sudo docker run hello-world
+
+Uninstall Docker CE
+1. $ sudo apt-get purge docker-ce
+2. $ sudo rm -rf /var/lib/docker
+
+
+
+
+******************
+
+		

@@ -1,0 +1,125 @@
+*********Set up openshift cluster on windows machine*******
+
+- Download Oracle virtual machine : https://www.virtualbox.org/
+- Download minishift :  https://www.openshift.org/minishift/  ||  https://github.com/minishift/minishift/releases
+
+
+Reference : 
+https://www.marksei.com/openshift-minishift-widnows/
+https://rominirani.com/tutorial-getting-started-with-kubernetes-on-your-windows-laptop-with-minikube-3269b54a226
+
+
+
+
+PS> [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\minishift", [EnvironmentVariableTarget]::Machine)
+
+
+PS C:\WINDOWS\system32> minishift config set vm-driver virtualbox
+No Minishift instance exists. New 'vm-driver' setting will be applied on next 'minishift start'
+
+PS C:\WINDOWS\system32> minishift start
+-- Starting profile 'minishift'
+-- Check if deprecated options are used ... OK
+-- Checking if https://github.com is reachable ... OK
+-- Checking if requested OpenShift version 'v3.9.0' is valid ... OK
+-- Checking if requested OpenShift version 'v3.9.0' is supported ... OK
+-- Checking if requested hypervisor 'virtualbox' is supported on this platform ... OK
+-- Checking if VirtualBox is installed ... OK
+-- Checking the ISO URL ... OK
+-- Downloading OpenShift binary 'oc' version 'v3.9.0'
+ 40.81 MiB / 40.81 MiB [================================================================================================================] 100.00% 0s-- Downloading OpenShift v3.9.0 checksums ... OK
+-- Checking if provided oc flags are supported ... OK
+-- Starting local OpenShift cluster using 'virtualbox' hypervisor ...
+-- Minishift VM will be configured with ...
+   Memory:    2 GB
+   vCPUs :    2
+   Disk size: 20 GB
+
+   Downloading ISO 'https://github.com/minishift/minishift-centos-iso/releases/download/v1.10.0/minishift-centos7.iso'
+  344.00 MiB / 344.00 MiB [==============================================================================================================] 100.00% 0s
+-- Starting Minishift VM .......................................... OK
+-- Checking for IP address ... OK
+-- Checking for nameservers ... OK
+-- Checking if external host is reachable from the Minishift VM ...
+   Pinging 8.8.8.8 ... OK
+-- Checking HTTP connectivity from the VM ...
+   Retrieving http://minishift.io/index.html ... OK
+-- Checking if persistent storage volume is mounted ... OK
+-- Checking available disk space ... 1% used OK
+   Importing 'openshift/origin:v3.9.0'  CACHE MISS
+   Importing 'openshift/origin-docker-registry:v3.9.0' . CACHE MISS
+   Importing 'openshift/origin-haproxy-router:v3.9.0' . CACHE MISS
+-- OpenShift cluster will be configured with ...
+   Version: v3.9.0
+-- Copying oc binary from the OpenShift container image to VM ......................................................................................... OK
+-- Starting OpenShift cluster ................................................
+Using nsenter mounter for OpenShift volumes
+Using public hostname IP 192.168.99.100 as the host IP
+Using 192.168.99.100 as the server IP
+Starting OpenShift using openshift/origin:v3.9.0 ...
+OpenShift server started.
+
+The server is accessible via web console at:
+    https://192.168.99.100:8443
+
+You are logged in as:
+    User:     developer
+    Password: <any value>
+
+To login as administrator:
+    oc login -u system:admin
+
+	
+	
+***************After setup : https://docs.openshift.org/latest/minishift/openshift/openshift-client-binary.html	
+	
+	PS C:\WINDOWS\system32> minishift openshift version
+openshift v3.9.0+71543b2-33
+kubernetes v1.9.1+a0ce1bc657
+etcd 3.2.16
+PS C:\WINDOWS\system32> minishift start
+-- Starting profile 'minishift'
+The 'minishift' VM is already running.
+PS C:\WINDOWS\system32> minishift oc-envminishift oc-env
+Error: unknown command "oc-envminishift" for "minishift"
+Run 'minishift --help' for usage.
+unknown command "oc-envminishift" for "minishift"
+PS C:\WINDOWS\system32> minishift oc-env
+$Env:PATH = "C:\Users\venkat javaji\.minishift\cache\oc\v3.9.0\windows;$Env:PATH"
+# Run this command to configure your shell:
+# & minishift oc-env | Invoke-Expression
+PS C:\WINDOWS\system32> $Env:PATH = "C:\Users\venkat javaji\.minishift\cache\oc\v3.9.0\windows;$Env:PATH"
+PS C:\WINDOWS\system32> oc login
+Authentication required for https://192.168.99.100:8443 (openshift)
+Username: system
+Password:
+Login successful.
+
+You don't have any projects. You can try to create a new project, by running
+
+    oc new-project <projectname>
+
+PS C:\WINDOWS\system32>
+
+
+
+********Docker
+PS C:\WINDOWS\system32> minishift docker-env
+$Env:DOCKER_TLS_VERIFY = "1"
+$Env:DOCKER_HOST = "tcp://192.168.99.100:2376"
+$Env:DOCKER_CERT_PATH = "C:\Users\venkat javaji\.minishift\certs"
+# Run this command to configure your shell:
+# & minishift docker-env | Invoke-Expression
+
+
+
+
+
+=================Important points***
+
+if minishift unable to start : please delete minishift --> minishift delete
+
+#2 minishift config set vm-driver virtualbox
+#3 minishift start --vm-driver=virtualbox
+#4 minishift oc-env  --> set the oc client env
+#minishift docker-env --->set the docker env

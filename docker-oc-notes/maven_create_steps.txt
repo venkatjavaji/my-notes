@@ -1,0 +1,15 @@
+Maven Create Eclipse Web Application Project Example
+
+Step 1) Create a normal maven web application
+
+mvn archetype:generate -DgroupId=com.javaji.jersey -DartifactId=springRestJersey1Demo -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+
+Step 2) Convert it to eclipse web application
+
+To Convert it to eclipse web application, following command needs to be run.
+
+mvn eclipse:eclipse "-Dwtpversion=2.0"
+
+
+

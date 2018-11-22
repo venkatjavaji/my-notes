@@ -1,0 +1,13 @@
+***********Installing Docker on Windows-linux Bash
+
+# https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
+-	Install using the repository
+
+
+- https://stackoverflow.com/questions/44678725/cannot-connect-to-the-docker-daemon-at-unix-var-run-docker-sock-is-the-docker
+- https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4
+- https://nickjanetakis.com/blog/should-you-use-the-docker-toolbox-or-docker-for-mac-windows
+- https://codingrandomly.com/2018/06/docker-command-line-wsl/
+
+
+-https://github.com/docker/machine/issues/4271 | This computer doesn't have VT-X/AMD-v enabled. Enabling it in the BIOS is mandatory 

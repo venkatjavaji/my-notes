@@ -1,0 +1,107 @@
+Running mysql Docker container Locally****
+
+$ docker run -itd --name db -e MYSQL_ROOT_PASSWORD=password mysql
+Unable to find image 'mysql:latest' locally
+latest: Pulling from library/mysql
+683abbb4ea60: Pull complete
+0550d17aeefa: Pull complete
+7e26605ddd77: Pull complete
+9882737bd15f: Pull complete
+999c06ab75f6: Pull complete
+c71d695f9937: Pull complete
+c38f847c1491: Pull complete
+5e0cb05a8fc3: Pull complete
+c89e3e373fca: Pull complete
+fa39a2c9922d: Pull complete
+b293d9c897c4: Pull complete
+3dc061869740: Pull complete
+Digest: sha256:43ed4f8c9d1695e97a39cdfe9475af9096e3723cfb79d820d8da00d61a277a85
+Status: Downloaded newer image for mysql:latest
+301cfc36dbb7ce8b39cf79cefca8e8a5470ef90d80b9c7a0e0484210ad20793b
+
+venkat javaji@venkatVJ MINGW64 /c/Program Files/Docker Toolbox
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+301cfc36dbb7        mysql               "docker-entrypoint.s…"   15 seconds ago      Up 19 seconds       3306/tcp            db
+
+
+venkat javaji@venkatVJ MINGW64 /c/Program Files/Docker Toolbox
+$ docker exec -it db bash
+root@301cfc36dbb7:/#mysql -u root -p password
+
+mysql>
+
+CREATE DATABASE mysqldocker;
+ use mysqldocker;
+CREATE TABLE userdetails( id INT NOT NULL AUTO_INCREMENT,
+ name VARCHAR(100) NOT NULL,
+ country VARCHAR(40) NOT NULL,
+ phone INT NOT NULL,
+ PRIMARY KEY(id));
+use mysqldocker;
+INSERT INTO userdetails
+(id,name,country,phone)
+VALUES
+(1,"venkat","india",12345);
+INSERT INTO userdetails
+(name,country,phone)
+VALUES
+("jose","costarica",34567);
+
+
+
+
+#Running mysql image :
+
+ docker exec -it db bash
+ 
+ #stop the container
+ 
+ docker stop <<container name>>
+ 
+ #delete the container
+ docker rm <<container name>>
+
+
+
+ ****Issue**************************************************8
+ $ docker exec -it db bash
+root@93970fbb1e29:/# mysql -uroot -ppassword
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+root@93970fbb1e29:/# mysql -uroot
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+root@93970fbb1e29:/# mysql
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+root@93970fbb1e29:/# exit
+exit
+
+venkat javaji@venkatVJ MINGW64 /c/Program Files/Docker Toolbox**************************************
+$ docker restart db
+db
+
+venkat javaji@venkatVJ MINGW64 /c/Program Files/Docker Toolbox
+$ docker exec -it db bash
+root@93970fbb1e29:/# mysql -uroot
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.11 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> mysql -uroot -ppassword;    #sometimes login with this style****
+
+
+
+
+
+Running Tomcat*********************************
+docker run -it -p 8080:8080 tomcat
+
+http://geekyplatypus.com/packaging-and-serving-your-java-application-with-docker/
