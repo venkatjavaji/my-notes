@@ -1,0 +1,36 @@
+
+- truststore @certificates 
+-server.keystore @keys
+
+Ref: https://www.opencodez.com/java/implement-2-way-authentication-using-ssl.htm
+	https://blog.novatec-gmbh.de/spring-boot-applications-tls-http2/
+	http://blog.palominolabs.com/2011/10/18/java-2-way-tlsssl-client-certificates-and-pkcs12-vs-jks-keystores/index.html
+	
+#1. Generate server jks file
+	
+	keytool -genkey -alias MyServer -keyalg RSA -validity 1825 -keystore "MyServer.jks" 
+	-storetype JKS -dname 	"CN=myserver.com,OU=My Company Name,O=My Organization,L=My Location,ST=My State,
+	C=IN" -keypass password -storepass password
+
+#2. Now we need  a certificate file that can be distributed as public certificate to clients. Run below command to extract that certificate. It will ask for the password which you have supplied above while creating JKS
+
+	keytool -exportcert -alias MyServer -keystore MyServer.jks -file MyServerPublic.cer
+	
+#3. Similar steps needs to be followed for Client JKS file and Client Public Certificate
+	
+	keytool -genkey -alias MyClient -keyalg RSA -validity 1825 -keystore MyClient.jks -storetype JKS 
+	-dname "CN=client.com,OU=Client Company,O=Client,L=CLient Location,ST=Client State,C=IN" 
+	-keypass password -storepass password
+	
+#4. Client certifcate
+	keytool -exportcert -alias MyClient -keystore MyClient.jks -file MyClientPublic.cer
+	
+#5. Now we have all the keystores and public certificates. In order for 2 Way Authentication to work we need to make sure that Server 		recognizes clients public certificate and Client is aware of Servers certificate. 
+	
+	--Add Server certificate to client truststore
+	keytool -importcert -alias MyServer -keystore MyClient.jks -file MyServerPublic.cer
+
+	--Add client certificate to server truststore
+	keytool -importcert -alias MyClient -keystore MyServer.jks -file MyClientPublic.cer
+	
+	
