@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-06T15:29:11.427Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="u9P7xun437LdAnmO7Psw" version="20.5.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-06T15:30:08.572Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="0YAHxkREaW-ogev6WBQv" version="20.5.2" type="github" pages="2">
   <diagram id="8uqgado0AFzXxvvhK6Mf" name="New-Cloud-Account-Creation-Flow">
-    <mxGraphModel dx="1018" dy="1688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1018" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,11 +11,6 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="110" y="270" as="sourcePoint" />
             <mxPoint x="180" y="240" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="onPUVNJoLzKqrLVPdGGp-3" value="&lt;b&gt;1 Open&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pcmFgGx2oCK5pUwCPBzZ-2" vertex="1" connectable="0">
-          <mxGeometry x="-0.1636" y="2" relative="1" as="geometry">
-            <mxPoint x="-39" y="-248" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qoPiFBq_tKDIY9XLKDgb-7" value="&lt;b&gt;1 OPEN&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pcmFgGx2oCK5pUwCPBzZ-2">
