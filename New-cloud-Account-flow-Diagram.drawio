@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-06T15:26:39.260Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="00FJ9fjlApDTqQgjgHTx" version="20.5.2" type="github" pages="2">
-  <diagram id="8uqgado0AFzXxvvhK6Mf" name="Page-1">
-    <mxGraphModel dx="1018" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2022-11-06T15:29:11.427Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="u9P7xun437LdAnmO7Psw" version="20.5.2" type="github" pages="2">
+  <diagram id="8uqgado0AFzXxvvhK6Mf" name="New-Cloud-Account-Creation-Flow">
+    <mxGraphModel dx="1018" dy="1688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,9 +13,14 @@
             <mxPoint x="180" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="onPUVNJoLzKqrLVPdGGp-3" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pcmFgGx2oCK5pUwCPBzZ-2" vertex="1" connectable="0">
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-3" value="&lt;b&gt;1 Open&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pcmFgGx2oCK5pUwCPBzZ-2" vertex="1" connectable="0">
           <mxGeometry x="-0.1636" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-39" y="-248" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qoPiFBq_tKDIY9XLKDgb-7" value="&lt;b&gt;1 OPEN&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pcmFgGx2oCK5pUwCPBzZ-2">
+          <mxGeometry x="-0.3273" y="1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pcmFgGx2oCK5pUwCPBzZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-3" edge="1">
@@ -191,7 +196,7 @@
         </mxCell>
         <mxCell id="onPUVNJoLzKqrLVPdGGp-73" value="&lt;b&gt;2 UPLOAD FILE&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="onPUVNJoLzKqrLVPdGGp-72" vertex="1" connectable="0">
           <mxGeometry x="-0.4382" y="-2" relative="1" as="geometry">
-            <mxPoint x="42" as="offset" />
+            <mxPoint x="20" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="onPUVNJoLzKqrLVPdGGp-56" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.chrome" parent="1" vertex="1">
@@ -269,10 +274,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xZsVo6f30EyC9vr5Mrp2-7" value="Generate a csv file with &lt;b&gt;cloud-account-error.csv&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="1850" width="160" height="60" as="geometry" />
+          <mxGeometry x="690" y="1769.75" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xZsVo6f30EyC9vr5Mrp2-12" value="re-validate file and re-start from&amp;nbsp;&lt;b&gt;#step-2&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=#fad7ac;strokeColor=#b46504;" vertex="1" parent="1">
-          <mxGeometry x="910" y="1850" width="160" height="60" as="geometry" />
+          <mxGeometry x="930" y="1769.75" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xZsVo6f30EyC9vr5Mrp2-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xZsVo6f30EyC9vr5Mrp2-17" target="xZsVo6f30EyC9vr5Mrp2-28">
           <mxGeometry relative="1" as="geometry" />
@@ -349,6 +354,12 @@
         </mxCell>
         <mxCell id="xZsVo6f30EyC9vr5Mrp2-47" value="Success Account" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="475" y="840" width="85" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qoPiFBq_tKDIY9XLKDgb-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="21.2" y="1222.5" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qoPiFBq_tKDIY9XLKDgb-4" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.chrome" vertex="1" parent="1">
+          <mxGeometry x="69" y="250" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
