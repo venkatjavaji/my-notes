@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-06T15:30:08.572Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="0YAHxkREaW-ogev6WBQv" version="20.5.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-06T15:31:37.431Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="gHPYTl2BjHkdpbMTUolV" version="20.5.2" type="github" pages="2">
   <diagram id="8uqgado0AFzXxvvhK6Mf" name="New-Cloud-Account-Creation-Flow">
     <mxGraphModel dx="1018" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -41,7 +41,7 @@
         </mxCell>
         <mxCell id="onPUVNJoLzKqrLVPdGGp-81" value="&lt;b&gt;3 SUBMIT&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pcmFgGx2oCK5pUwCPBzZ-7" vertex="1" connectable="0">
           <mxGeometry x="-0.2333" y="-1" relative="1" as="geometry">
-            <mxPoint x="14" y="-1" as="offset" />
+            <mxPoint x="14" y="-11" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pcmFgGx2oCK5pUwCPBzZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-5" target="pcmFgGx2oCK5pUwCPBzZ-3" edge="1">
@@ -81,7 +81,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="onPUVNJoLzKqrLVPdGGp-29" value="Success" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="onPUVNJoLzKqrLVPdGGp-28" vertex="1" connectable="0">
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-29" value="&lt;b&gt;Success&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="onPUVNJoLzKqrLVPdGGp-28" vertex="1" connectable="0">
           <mxGeometry x="-0.1875" y="1" relative="1" as="geometry">
             <mxPoint x="-26" as="offset" />
           </mxGeometry>
@@ -92,7 +92,7 @@
         <mxCell id="onPUVNJoLzKqrLVPdGGp-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-13" target="pcmFgGx2oCK5pUwCPBzZ-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="onPUVNJoLzKqrLVPdGGp-47" value="&lt;b&gt;5 CREATED&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="onPUVNJoLzKqrLVPdGGp-31" vertex="1" connectable="0">
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-47" value="&lt;b&gt;4 CREATED&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="onPUVNJoLzKqrLVPdGGp-31" vertex="1" connectable="0">
           <mxGeometry x="0.0119" y="-1" relative="1" as="geometry">
             <mxPoint x="1" y="-1" as="offset" />
           </mxGeometry>
@@ -120,14 +120,6 @@
           <mxGeometry x="665" y="570" width="148.75" height="60" as="geometry" />
         </mxCell>
         <mxCell id="onPUVNJoLzKqrLVPdGGp-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="onPUVNJoLzKqrLVPdGGp-5" target="pcmFgGx2oCK5pUwCPBzZ-13" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="onPUVNJoLzKqrLVPdGGp-46" value="4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="onPUVNJoLzKqrLVPdGGp-30" vertex="1" connectable="0">
-          <mxGeometry x="0.1556" y="-2" relative="1" as="geometry">
-            <mxPoint y="-2" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="onPUVNJoLzKqrLVPdGGp-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="onPUVNJoLzKqrLVPdGGp-5" target="pcmFgGx2oCK5pUwCPBzZ-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="onPUVNJoLzKqrLVPdGGp-5" value="create a record in TblCloudAccountStage table" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
