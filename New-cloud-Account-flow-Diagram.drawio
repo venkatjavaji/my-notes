@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-27T02:22:14.087Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="LhchTBsT20fOn3bTeIX0" version="20.3.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-06T12:54:01.653Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="q3eyTn7nEfojSPcBO_s2" version="20.5.2" type="github" pages="2">
   <diagram id="8uqgado0AFzXxvvhK6Mf" name="Page-1">
     <mxGraphModel dx="1018" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -13,12 +13,22 @@
             <mxPoint x="180" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-3" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pcmFgGx2oCK5pUwCPBzZ-2">
+          <mxGeometry x="-0.1636" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="pcmFgGx2oCK5pUwCPBzZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="240" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-3" value="Create new Cloud Account" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-4" value="&lt;b&gt;2 ENTER&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pcmFgGx2oCK5pUwCPBzZ-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-3" value="Create new Cloud Account" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="180" y="210" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pcmFgGx2oCK5pUwCPBzZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-5" target="pcmFgGx2oCK5pUwCPBzZ-6" edge="1">
@@ -26,7 +36,12 @@
         </mxCell>
         <mxCell id="pcmFgGx2oCK5pUwCPBzZ-8" value="Success" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="pcmFgGx2oCK5pUwCPBzZ-7" vertex="1" connectable="0">
           <mxGeometry x="-0.0824" y="1" relative="1" as="geometry">
-            <mxPoint y="1" as="offset" />
+            <mxPoint x="5" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-81" value="&lt;b&gt;3 SUBMIT&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pcmFgGx2oCK5pUwCPBzZ-7">
+          <mxGeometry x="-0.2333" y="-1" relative="1" as="geometry">
+            <mxPoint x="14" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pcmFgGx2oCK5pUwCPBzZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-5" target="pcmFgGx2oCK5pUwCPBzZ-3" edge="1">
@@ -37,27 +52,215 @@
             <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-5" value="Account Validation" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-37" value="send back to previous page" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pcmFgGx2oCK5pUwCPBzZ-10">
+          <mxGeometry x="-0.1154" y="2" relative="1" as="geometry">
+            <mxPoint x="-28" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-5" value="Account Validation" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="200" y="340" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-6" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="425" y="460" as="targetPoint" />
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-27" value="Failed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-6" target="pcmFgGx2oCK5pUwCPBzZ-3">
+          <mxGeometry x="0.2857" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="240" />
+            </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-6" value="Put the Account file is S3" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="365" y="350" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#f5f5f5;strokeColor=#666666;" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-13" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="540" y="490" as="targetPoint" />
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-36" value="send back to previous page" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="onPUVNJoLzKqrLVPdGGp-27">
+          <mxGeometry x="-0.5828" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-13" value="wait for 10 seconds.. display gif.." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="365" y="460" width="120" height="60" as="geometry" />
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-6" target="onPUVNJoLzKqrLVPdGGp-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="485" y="450" />
+              <mxPoint x="485" y="450" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-15" value="fetch the account creation status" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="540" y="460" width="120" height="60" as="geometry" />
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-29" value="Success" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="onPUVNJoLzKqrLVPdGGp-28">
+          <mxGeometry x="-0.1875" y="1" relative="1" as="geometry">
+            <mxPoint x="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-6" value="Put the Account request file is S3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="400" y="350" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-13" target="pcmFgGx2oCK5pUwCPBzZ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-47" value="&lt;b&gt;5 CREATED&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="onPUVNJoLzKqrLVPdGGp-31">
+          <mxGeometry x="0.0119" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-13" value="hold for 5 seconds.. on UI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="660" y="480" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-15" target="onPUVNJoLzKqrLVPdGGp-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-34" value="Success" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="onPUVNJoLzKqrLVPdGGp-32">
+          <mxGeometry x="0.08" y="1" relative="1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.46;entryY=-0.07;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="pcmFgGx2oCK5pUwCPBzZ-15" target="onPUVNJoLzKqrLVPdGGp-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-35" value="Failure" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="onPUVNJoLzKqrLVPdGGp-33">
+          <mxGeometry x="-0.1779" relative="1" as="geometry">
+            <mxPoint x="21" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcmFgGx2oCK5pUwCPBzZ-15" value="fetch the account creation status from S3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="665" y="570" width="148.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-5" target="pcmFgGx2oCK5pUwCPBzZ-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-46" value="4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="onPUVNJoLzKqrLVPdGGp-30">
+          <mxGeometry x="0.1556" y="-2" relative="1" as="geometry">
+            <mxPoint y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-5" target="pcmFgGx2oCK5pUwCPBzZ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-5" value="create a record in TblCloudAccountStage table" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="400" y="480" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-13" value="Create new record in TblMainAccount" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="405" y="575" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-17" value="update status in TblCloudAccountStage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="670" y="700" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-38" target="onPUVNJoLzKqrLVPdGGp-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="176" y="874" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-38" value="Scheduler runs every 1Minute" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Scheduler.svg;" vertex="1" parent="1">
+          <mxGeometry x="50" y="840" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-44" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="470" y="710" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-52" value="Failed&lt;b&gt;&amp;nbsp;||&amp;nbsp;&lt;/b&gt;No status on the Account" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-50" target="onPUVNJoLzKqrLVPdGGp-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-50" target="onPUVNJoLzKqrLVPdGGp-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-55" value="Success" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="onPUVNJoLzKqrLVPdGGp-54">
+          <mxGeometry x="-0.2045" y="-3" relative="1" as="geometry">
+            <mxPoint y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-50" value="fetch the account creation status from S3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="200" y="848" width="148.75" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-51" value="update status in TblCloudAccountStage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="198.75" y="980" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-53" value="Create new record in TblMainAccount" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="460" y="848" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="186" y="1255" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-68" value="&lt;b&gt;1&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="onPUVNJoLzKqrLVPdGGp-61">
+          <mxGeometry x="-0.0909" y="-2" relative="1" as="geometry">
+            <mxPoint x="-10" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-56" target="onPUVNJoLzKqrLVPdGGp-62">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="1403" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-73" value="&lt;b&gt;2 UPLOAD FILE&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="onPUVNJoLzKqrLVPdGGp-72">
+          <mxGeometry x="-0.4382" y="-2" relative="1" as="geometry">
+            <mxPoint x="32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-56" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.chrome" vertex="1" parent="1">
+          <mxGeometry x="51.2" y="1220" width="68.8" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-57" value="" style="line;strokeWidth=2;html=1;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="790" width="810" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-59" value="" style="line;strokeWidth=2;html=1;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1100" width="810" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-62" target="onPUVNJoLzKqrLVPdGGp-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-62" value="Upload Cloud Account file" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1370" width="190" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-63" target="onPUVNJoLzKqrLVPdGGp-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-63" value="Open Import New Account" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1222.5" width="190" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-64" target="onPUVNJoLzKqrLVPdGGp-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-64" value="Download the template" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="1223" width="190" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-66" value="Fill the details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1223" width="190" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-77">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="1600" />
+              <mxPoint x="570" y="1600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-88" value="&lt;b&gt;3 VALIDATE&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="onPUVNJoLzKqrLVPdGGp-87">
+          <mxGeometry x="-0.16" y="1" relative="1" as="geometry">
+            <mxPoint x="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="onPUVNJoLzKqrLVPdGGp-77" target="onPUVNJoLzKqrLVPdGGp-101">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="1403" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-77" value="Insert records to&amp;nbsp; TblRawAccount" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="1370" width="190" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-97" value="Insert records to&amp;nbsp; TblStageCloudAccount" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1618" width="190" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="onPUVNJoLzKqrLVPdGGp-101" value="Put the request file in S3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1510" width="190" height="65" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -274,10 +477,10 @@
         <mxCell id="m65-xue7yqfySkY63nyv-86" value="Scheduler" style="shape=umlFrame;whiteSpace=wrap;html=1;dashed=1;strokeWidth=1;fontSize=11;fontColor=#CC6600;" parent="1" vertex="1">
           <mxGeometry x="50" y="1040" width="820" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="-230" y="130" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZGZWRhwcXaZ4cj1v0WRp-6">
+        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ZGZWRhwcXaZ4cj1v0WRp-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="40" y="375" as="targetPoint" />
             <Array as="points">
@@ -286,21 +489,21 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;dashed=1;" vertex="1" parent="1">
+        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="-220" y="230" width="10" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.291;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZGZWRhwcXaZ4cj1v0WRp-12" target="m65-xue7yqfySkY63nyv-85">
+        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.291;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ZGZWRhwcXaZ4cj1v0WRp-12" target="m65-xue7yqfySkY63nyv-85" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;dashed=1;" vertex="1" parent="1">
+        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="-220" y="490" width="10" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZGZWRhwcXaZ4cj1v0WRp-14">
+        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ZGZWRhwcXaZ4cj1v0WRp-14" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="60" y="1435" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;dashed=1;" vertex="1" parent="1">
+        <mxCell id="ZGZWRhwcXaZ4cj1v0WRp-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="-210" y="1320" width="10" height="230" as="geometry" />
         </mxCell>
       </root>
